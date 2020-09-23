@@ -57,16 +57,17 @@
             // 
             this.pic.Location = new System.Drawing.Point(12, 116);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(587, 430);
+            this.pic.Size = new System.Drawing.Size(1280, 720);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic.TabIndex = 2;
             this.pic.TabStop = false;
             // 
             // btnAufnahme
             // 
             this.btnAufnahme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAufnahme.Location = new System.Drawing.Point(238, 72);
+            this.btnAufnahme.Location = new System.Drawing.Point(527, 12);
             this.btnAufnahme.Name = "btnAufnahme";
-            this.btnAufnahme.Size = new System.Drawing.Size(145, 38);
+            this.btnAufnahme.Size = new System.Drawing.Size(765, 98);
             this.btnAufnahme.TabIndex = 3;
             this.btnAufnahme.Text = "&Aufnahme";
             this.btnAufnahme.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 574);
+            this.ClientSize = new System.Drawing.Size(1377, 859);
             this.Controls.Add(this.btnAufnahme);
             this.Controls.Add(this.pic);
             this.Controls.Add(this.label1);
