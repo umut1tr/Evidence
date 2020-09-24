@@ -32,7 +32,7 @@ namespace Evidence
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
                 cboKamera.Items.Add(filterInfo.Name);
-            cboKamera.SelectedIndex = 1; // Selects the first listed connected camera in the list
+            cboKamera.SelectedIndex = 0; // Selects the first listed connected camera in the list
             videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboKamera.SelectedIndex].MonikerString); // Initialises camera with selected camera
             videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame; // Puts camera feed into display box
             videoCaptureDevice.Start();
@@ -52,7 +52,7 @@ namespace Evidence
             {
                 string clipboardText = Clipboard.GetText(); // Gets the text from the clipboard
                 Bitmap varBmp = (Bitmap)pic.Image.Clone(); // Creates the bitmap image from whatever is shown in the video box
-                string filepath = @"C:\Users\ivanw\Desktop";
+                string filepath = @"C:\Users\umut1\Desktop";
                 string fileName = System.IO.Path.Combine(filepath, clipboardText) + @".png";
                 varBmp.Save(fileName, ImageFormat.Png);
                 varBmp.Dispose();
